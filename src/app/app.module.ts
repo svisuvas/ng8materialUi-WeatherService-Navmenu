@@ -12,6 +12,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatFormFieldModule, MatInputModule, MatSelectModule } from '@angular/material';
+import { WeatherDataService } from './weather-data.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -30,9 +34,13 @@ import { MatListModule } from '@angular/material/list';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [WeatherDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

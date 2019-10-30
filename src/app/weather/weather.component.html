@@ -1,1 +1,20 @@
-<p>weather works!</p>
+<h1>Weather</h1>
+<mat-form-field>
+  <mat-label>Airports</mat-label>
+  <mat-select  [(value)]="weatherSelectedValue" (selectionChange)="getData([(value)])" required>
+    <mat-option>None</mat-option>
+    <mat-option value=349727>New York</mat-option>
+    <mat-option value=348308>Chicago</mat-option>
+    <mat-option value=347624>Los Angeles</mat-option>
+ 
+  </mat-select>
+</mat-form-field>
+ <!--
+{{weatherSelectedValue}}
+ -->
+ 
+
+ 
+<ul *ngFor="let weather of weatherData">
+  <li><h1>{{weather.Temperature.Imperial.Value}} &#176;F  . {{weather.WeatherText}}</h1></li>
+</ul>

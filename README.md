@@ -6,6 +6,7 @@ Replace the apikey value in the /src/app/weather-data.service.ts with a valid on
 ```code:ts
  private _apiKey: string =  "?apikey=Replace_with_a_valid_apikey_from_AccuWeather";
 ```
+![ng8App - api component](../assets/ng8app-api.png)
 
 ## Development server
 

@@ -1,6 +1,11 @@
 # Ngmaterialnavbar01
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.15.
+This is an Angular/Material version 8, app that has "Home, Weather and My API" components. Weather component provides a select option to view the current temperature and weather text "cloudy, sunny etc." from 3 cities New York, Chicago and Los AThe WeatherData service using HttpClientModule connects to the AccuWeather API to get the weather information.
+
+Replace the apikey value in the /src/app/weather-data.service.ts with a valid one for the app to work.
+```code:ts
+ private _apiKey: string =  "?apikey=Replace_with_a_valid_apikey_from_AccuWeather";
+```
 
 ## Development server
 
